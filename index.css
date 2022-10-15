@@ -19,7 +19,8 @@ a{text-decoration:none;}
 	padding:10px 0px;
 }
 .logo-h1>a{color:hsl(0, 0%, 8%);}
-.nav-div2>a,.nav-div3>a{
+.fea-div,.fea-div1,.fea-div2,.fea-div3{margin-left:10px;}
+.fea-div>a,.fea-div1>a,.fea-div2>a,.fea-div3>a,.nav-div3>a{
 	display:inline-block;
 	font-size:20px;
 	color:hsl(0, 0%, 8%);
@@ -77,6 +78,39 @@ main{clear:left;}
 	background:hsl(0, 0%, 98%);
 	color:hsl(0, 0%, 8%);
 }
+.fea-span{
+	position:absolute;
+	border:1px solid rgba(0,0,0,0.2);
+	width:10%;
+	border-radius:10px;
+	top:50px;
+	display:none;
+	background:hsl(0, 1%, 95%);
+}
+.fea-span>a,.com>a{
+	display:block;
+	width:100%;
+	color:hsl(0, 0%, 8%);
+	padding:5px 0px;
+}
+.fea-svg{
+	padding:0px 10px;
+}
+.com{
+	left:20%;
+	position:absolute;
+	border:1px solid rgba(0,0,0,0.2);
+	width:10%;
+	border-radius:10px;
+	top:50px;
+	background:hsl(0, 1%, 95%);
+	display:none;
+}
+.com>a{padding:5px 10px;}
+.fea-span>a:hover{background:hsl(0, 0%, 100%);}
+.com>a:hover{background:hsl(0, 0%, 100%);}
+.fea-div:hover .fea-span{display:block;}
+.fea-div1:hover .com{display:block;}
 .nav-arrow{display:none;}
 @media (max-width:991px){
 	.nav-div2{display:none;}
